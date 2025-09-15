@@ -1,0 +1,155 @@
+body {
+  background-image: url(../IMG/fondo\ creadores.img);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1{
+  background-color: rgba(0, 0, 0, 0.671);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-style: 45px;
+  font-family: Georgia;
+  border-radius: 15px;
+  border: 5px solid black;
+  margin-left: 400px;
+  margin-right: 400px;
+}
+
+h2{
+  padding: 15px;
+  font-style: 45px;
+  font-family: Georgia;
+  margin: 30px;
+  font-size: 40px;
+}
+
+h4{
+  color: white;
+  font-size: 20px;
+  font-family: Georgia;
+}
+
+p{
+  background-color: rgba(0, 0, 0, 0.479);
+  padding: 15px;
+  font-style: 55px;
+  font-family: Georgia;
+  margin: 30px;
+  border-radius: 15px;
+}
+
+.fotos{
+  display: flex;
+  width: 600px;
+  height: 430px;
+  background: rgba(0, 0, 0, 0.726);
+  margin: auto;
+  border: 5px solid black;
+}
+
+section{
+  margin: auto;
+}
+
+section img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s ease;
+}
+section img:hover {
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+.about-us {
+  width: auto;
+  text-align: center;
+}
+
+.about-us h2 {
+  font-size: 2rem;
+  color: #000000;
+}
+
+.about-us p {
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.team {
+  display: flex;
+}
+
+.member {
+  background-color: rgba(0, 0, 0, 0.507);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 174, 0, 0.986);
+  width: 80%;
+  margin: 1rem 0;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.5s ease;
+}
+
+.member:hover {
+  transform: translateY(-20px);
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+.member h3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #ff9100;
+  font-size: 40px;
+}
+
+.member p {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .member {
+    width: 90%;
+  }
+}
+
+button{
+  background-color: rgba(0, 0, 0, 0.815);
+  border: 5px solid white;
+  font-size: 25px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+footer{
+  background-color: rgba(0, 0, 0, 0.932);
+  color: white;
+  padding: 15px;
+  position: relative;
+  text-align: center;
+}

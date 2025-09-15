@@ -1,0 +1,150 @@
+body {
+    font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+    background: linear-gradient(135deg, #00e1ff 60%, #ff9100 100%);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-restas {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 10px 0;
+}
+
+.menu-restas button {
+    background: #00bcd4;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 18px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    transition: background 0.2s;
+}
+
+.menu-restas button:hover {
+    background: #008ba3;
+}
+
+.tablero {
+    display: flex;
+    gap: 30px;
+    margin: 30px 0 40px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tarjeta {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 16px #00bcd455;
+    padding: 30px 40px;
+    font-size: 2em;
+    color: #008ba3;
+    margin: 10px;
+    min-width: 120px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #b2ebf2;
+}
+
+.tarjeta.correcta {
+    border-color: #4caf50;
+    background: #e8f5e9;
+    color: #388e3c;
+}
+
+.tarjeta.incorrecta {
+    border-color: #e53935;
+    background: #ffebee;
+    color: #b71c1c;
+}
+
+.respuestas {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.respuesta {
+    background: #00bcd4;
+    color: #fff;
+    border-radius: 12px;
+    padding: 18px 28px;
+    font-size: 1.3em;
+    font-weight: bold;
+    cursor: grab;
+    user-select: none;
+    box-shadow: 0 2px 8px #00bcd455;
+    border: 2px solid #fff;
+    transition: background 0.2s, color 0.2s;
+}
+
+.respuesta.dragging {
+    opacity: 0.5;
+}
+
+.info {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #008ba3;
+}
+
+.vidas {
+    color: #e53935;
+    font-weight: bold;
+}
+
+.puntaje {
+    color: #388e3c;
+    font-weight: bold;
+}
+
+.pausa-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    font-size: 3em;
+    color: #fff;
+    display: none;
+}
+
+.pausa-overlay.active {
+    display: flex;
+}
+
+.fin-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+    font-size: 2em;
+    color: #fff;
+    display: none;
+}
+
+.fin-overlay.active {
+    display: flex;
+}
+
+.fin-overlay button {
+    margin-top: 25px;
+    font-size: 1em;
+}

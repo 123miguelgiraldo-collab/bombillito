@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registro.css">
+    <link rel="shortcut icon" href=" " type="image/x-icon">
+    <title>Registro</title>
+</head>
+<body>
+    <video class="video-background" muted autoplay loop >
+        <source src="video mp4/fondo naranja.mp4"type="video/mp4">
+    </video>
+
+    <div class="formulario">
+        <h1> ✨ Registro ✨ </h1>
+        <form method="post">
+            <div class="username">
+                <input type="text" required id="nombre">
+                <label>Nombre</label>
+            </div>
+            <div class="correo">
+                <input type="email" required id="correo">
+                <label>Correo</label> 
+            </div>
+            <div class="Contrasena">
+                <input type="password" required id="contraseña">
+                <label>Contraseña</label> 
+            </div>
+            <input type="submit" value="Registrarse" onclick="Enviar(event)">
+            <div class="cuenta">
+                <a href="../inicio de sesion/iniciar sesion.html"> Ya tengo cuenta </a>
+                <br>
+                <br>
+            </div>
+            <div class="volver">
+                <a href="../pagina principal.html">Volver</a>
+            </div>
+        </form>
+    </div>
+    
+</body>
+
+<script src="registro.js"></script>
+
+</html>

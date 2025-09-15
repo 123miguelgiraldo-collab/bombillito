@@ -1,0 +1,108 @@
+body {
+    background-image: url(../niveles/img/fondo-minijuego.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Arial Rounded MT Bold', Arial, sans-serif; 
+}
+
+header {
+    font-family: fantasy;
+    box-shadow: 0 6px 25px rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    animation: header 2s infinite alternate;
+    font-size: 30px;
+    border-radius: 20px;
+    border: 10px solid black;
+}
+
+@keyframes header {
+    0% {background-color: #ffd9009d;}
+    25% {background-color: #ffbd08c7;}
+    50% {background-color: #ffc400d0;}
+    75% {background-color: #ffa600c5;}
+    100% {background-color: #ff7b00d3;}
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 60px;
+    max-width: 900px;
+    margin: auto;
+}
+.juego {
+    background: linear-gradient(135deg, #ffd900 60%, #ff9100 100%);
+    border-radius: 25px;
+    border: 5px solid black;
+    box-shadow: 0 6px 25px rgb(238, 255, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+.juego:hover {
+    transform: scale(1.07) rotate(-2deg);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.22);
+}
+.juego img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+.juego span {
+    font-size: 1.1em;
+    color: #333;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo img{
+    border-radius: 100%;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 5px black;
+}
+
+.logo{
+    background-color: rgba(229, 255, 0, 0.63);
+    padding: 15px;
+    border-radius: 100%;
+    margin-left: 500px;
+    margin-right: 500px;
+    border: 5px solid black;
+    animation: foto infinite 2s alternate ;
+}
+
+@keyframes foto {
+    0% {background-color: #ffffffb0;}
+    50% {background-color: #ffffff;}
+    100% {background-color: #ffffff7e;}
+}
+
+button{
+    display: flex;
+    margin: auto;
+    padding: 5px;
+    background-color: #ffd000;
+    border-radius: 10px;
+    border: solid 1px black;
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+    }
+}
+
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Resta y Arrastra</title>
+    <link rel="stylesheet" href="restas.css">
+</head>
+<body>
+    <div class="menu-restas">
+        <button onclick="window.location.href='../niveles.html'">Volver</button>
+        <button id="pausaBtn">Pausar</button>
+        <button id="reiniciarBtn">Repetir</button>
+    </div>
+    <div class="info">
+        <span class="puntaje">Puntos: <span id="puntos">0</span></span> | 
+        <span class="vidas">Vidas: <span id="vidas">3</span></span>
+    </div>
+    <div class="tablero" id="tablero"></div>
+    <div class="respuestas" id="respuestas"></div>
+    <div class="pausa-overlay" id="pausaOverlay">PAUSA</div>
+    <div class="fin-overlay" id="finOverlay">
+        <div id="finMensaje"></div>
+        <button onclick="reiniciarJuego()">Jugar de nuevo</button>
+    </div>
+    <script src="restas.js"></script>
+</body>
+</html>

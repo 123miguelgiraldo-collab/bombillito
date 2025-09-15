@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="iniciar.css">
+    <link rel="shortcut icon" href=" " type="image/x-icon">
+    <title>Inicio de sesion</title>
+</head>
+<body>
+    <video class="video-background" muted autoplay loop >
+        <source src="video mp4/fondo naranja.mp4"type="video/mp4">
+    </video>
+
+    <div class="formulario">
+        <h1> ✨ inicio de sesion ✨ </h1>
+        <form method="post">
+            <div class="username">
+                <input type="email" required id="correo">
+                <label>Correo electronico </label>
+            </div>
+            <div class="Contrasena">
+                <input type="password" required id="contraseña" >
+                <label>Contraseña</label>
+            </div>
+            <div class="recordar"> Olvido su contaseña</div>
+            <input type="submit" value="iniciar" onclick="Enviar(event)">
+            <div class="registrarse">
+                ¿No tienes cuenta?<a href="../registro/registro.html"> Registrate</a>
+                <br>
+                <br>
+            </div>
+            <div class="volver">
+                <a href="../pagina principal.html">Volver</a>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+<script src="iniciar sesion.js"></script>
+
+</html>

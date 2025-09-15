@@ -1,0 +1,97 @@
+body{
+    background-image: url(../IMG/fondo-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.Foto{
+    background-image: url(../IMG/fondoperfil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    border: 5px solid black;    
+    
+    img{
+    margin-left: 560px;
+    border-radius: 100%;
+    margin-top: 50px;
+    border: 2px solid black;
+}
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+    animation: btn 2s infinite alternate;
+}
+
+@keyframes btn {
+    0%   { background-color: rgb(0, 0, 0); }
+    50%  { background-color: rgb(36, 36, 36); }
+    100% { background-color: rgba(0, 0, 0, 0.904); }
+}
+
+button{
+    margin: auto;
+    display: flex;
+    font-size: 30px;
+    border-radius: 15px;
+    border: 5px solid white;
+}
+
+.contenedor-principal {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 30px;
+    box-shadow: 0 2px 8px rgb(0, 0, 0);
+}
+
+.columna-izquierda, .columna-derecha {
+    flex: 1;
+    min-width: 200px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgb(0, 0, 0);
+}
+
+.columna-central {
+    flex: 2;
+    min-width: 300px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgb(0, 0, 0);
+}
+
+h2{
+    color: red;
+    text-align: center;
+    border-bottom: black solid 2px;
+}
+
+h3{
+    color: red;
+    text-align: center;
+    border-bottom: black solid 2px;
+}
+
+.nuevo{
+    border-radius: 100%;
+    background-color: blue;
+    color: white;
+}
+
+img{
+    display: flex;
+}
+
+.columna-izquierda a{
+    margin-left: 10px;
+}
+
