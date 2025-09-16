@@ -18,8 +18,8 @@ header {
   padding: 50px 20px;
   color: #fff;
 }
-.hero h1 {
-  font-size: 3em;
+#nombre-usuario{
+  font-size: 2em;
 }
 .section {
   padding: 30px 20px;

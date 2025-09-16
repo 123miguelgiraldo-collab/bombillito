@@ -55,6 +55,18 @@ form .correo{
     margin: 30px 0;
 }
 
+form .Edad{
+    position: relative;
+    border-bottom: 2px solid #ffffff;
+    margin: 30px 0;
+}
+
+form .Institucion{
+    position: relative;
+    border-bottom: 2px solid #ffffff;
+    margin: 30px 0;
+}
+
 .username input{
     width: 100%;
     padding: 0 5px;
@@ -88,6 +100,30 @@ form .correo{
     color: white;
 }
 
+.Edad input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+}
+
+.Institucion input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+}
+
+
+
 .username label{
     position: absolute;
     top: 50%;
@@ -110,6 +146,26 @@ form .correo{
 }
 
 .correo label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad40;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.Edad label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad40;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.Institucion label{
     position: absolute;
     top: 50%;
     left: 5px;
@@ -149,6 +205,26 @@ form .correo{
     background: rgb(255, 0, 0);
 }
 
+.Edad span::before{
+    content:'';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: rgb(255, 0, 0);
+}
+
+.Institucion span::before{
+    content:'';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: rgb(255, 0, 0);
+}
+
 .username input:focus ~ label,
 .username input:not(:placeholder-shown) ~ label{
     top: -5px;
@@ -166,6 +242,20 @@ form .correo{
     top: -5px;
     color: rgb(255, 208, 1);
 }
+
+.Edad input:focus ~ label,
+.Edad input:not(:placeholder-shown) ~ label{
+    top: -5px;
+    color: rgb(255, 208, 1);
+}
+
+.Institucion input:focus ~ label,
+.Institucion input:not(:placeholder-shown) ~ label{
+    top: -5px;
+    color: rgb(255, 208, 1);
+}
+
+
 
 input[type="submit"]{
     width: 100%;
