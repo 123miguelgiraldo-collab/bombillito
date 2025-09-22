@@ -134,7 +134,7 @@ input[type="submit"]{
     outline: none;
 }
 input[type="submit"]:hover{
-    border-color: rgb(255, 0, 0);
+    border-color: rgb(255, 255, 255);
     transition: .5s;
 }
 .registrarse{
@@ -144,7 +144,7 @@ input[type="submit"]:hover{
     color: rgb(255, 255, 255);
 }
 .registrarse a{
-    color: rgb(255, 0, 0);
+    color: rgb(255, 153, 0);
     text-decoration: none;
 }
 .registrarse a:hover{
@@ -156,6 +156,6 @@ input[type="submit"]:hover{
     padding: 10px;
 }
 a{
-    color: rgb(255, 0, 0);
+    color: rgb(255, 217, 0);
     text-decoration: none;
 }

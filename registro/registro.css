@@ -255,8 +255,6 @@ form .Institucion{
     color: rgb(255, 208, 1);
 }
 
-
-
 input[type="submit"]{
     width: 100%;
     height: 50px;
@@ -282,7 +280,7 @@ input[type="submit"]:hover{
 }
 
 .cuenta a{
-    color: rgb(255, 0, 0);
+    color: rgb(255, 174, 0);
     text-decoration: none;
 }
 
@@ -295,6 +293,6 @@ input[type="submit"]:hover{
     padding: 10px;
 }
 a{
-    color: rgb(255, 0, 0);
+    color: rgb(255, 217, 0);
     text-decoration: none;
 }

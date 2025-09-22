@@ -18,7 +18,7 @@ function Enviar(event){
     localStorage.setItem('number',edad)
     localStorage.setItem('text',institucion)
 
-
+    
 }
 
     function Enviar(event){
