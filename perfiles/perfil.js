@@ -31,4 +31,6 @@ window.onload = function() {
         reader.onload = e => fondoPreview.src = e.target.result;
         reader.readAsDataURL(file);
         }
-    });
+});
+
+
