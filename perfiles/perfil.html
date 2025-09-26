@@ -9,35 +9,37 @@
 </head>
 <body>
 
-    <div class="Foto">
-        <img src="../IMG/FotoUsuario.png" alt="">
-    </div>
-    <br>
-    
-<div class="contenedor-principal">
-    <div class="columna-izquierda">
-        <h3>Agregar juegos</h3>
-        <div class="juego">
-            <img src="https://img.icons8.com/color/96/000000/math.png" alt="Juego 1">
-            <br>
-            <a href="edicion-juego">Editar</a>
-            <br>
-            <br>
-            <img src="../niveles/juegos/img/ping pong.jpeg" alt="Juego 4" width="96" height="96">
-            <br>
-            <a href="edicion-juego">Editar</a>
-        </div>
-        <button class="nuevo">+</button>
-    </div>
+    <div class="perfil">
+    <div class="portada">
 
-    <div class="columna-central">
-        <h2>Datos</h2>
+        <img id="fondoPreview" alt="" onclick="document.getElementById('fondoInput').click()">
+        <div class="perfil-foto">
+        <img id="perfilPreview" alt="" onclick="document.getElementById('perfilInput').click()">
+
+        <input type="file" id="perfilInput" accept="image/*" style="display:none">
+        <input type="file" id="fondoInput" accept="image/*" style="display:none">
+
+        </div>
+    </div>
+    <div class="contenido">
+        <h2><span id="nombre-usuario"></span></h2>
         <ul>
             <li>Nombre: <span id="nombre-usuario"></span></li>
             <li>Edad: <span id="edad-usuario"></span></li>
             <li>Correo: <span id="correo-usuario"></span></li>
             <li>Institucion : <span id="institucion-usuario"></span></li>
         </ul>
+    </div>
+    </div>
+
+    <div class="contenedor-principal">
+
+    <div class="columna-izquierda">
+        <h3>Salas</h3>
+
+        <div class="columna-central">
+            <h1>+</h1>
+        </div>
     </div>
 
     <div class="columna-derecha">
@@ -71,3 +73,4 @@
 <script src="../perfiles/perfil.js"></script>
 
 </html>
+

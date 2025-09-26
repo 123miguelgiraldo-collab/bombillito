@@ -1,24 +1,10 @@
-body{
-    background-image: url(../IMG/fondo-hero.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
-.Foto{
-    background-image: url(../IMG/fondoperfil.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 25px;
-    border: 5px solid black;    
-    
-    img{
-    margin-left: 560px;
-    border-radius: 100%;
-    margin-top: 50px;
-    border: 2px solid black;
-}
-}
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    }
 
 a{
     color: white;
@@ -28,19 +14,6 @@ a{
     animation: btn 2s infinite alternate;
 }
 
-@keyframes btn {
-    0%   { background-color: rgb(0, 0, 0); }
-    50%  { background-color: rgb(36, 36, 36); }
-    100% { background-color: rgba(0, 0, 0, 0.904); }
-}
-
-button{
-    margin: auto;
-    display: flex;
-    font-size: 30px;
-    border-radius: 15px;
-    border: 5px solid white;
-}
 
 .contenedor-principal {
     display: flex;
@@ -61,13 +34,14 @@ button{
 }
 
 .columna-central {
-    flex: 2;
-    min-width: 300px;
-    background: #fff;
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgb(0, 0, 0);
+    text-align: center;
+    background-color: rgba(251, 255, 0, 0.603);
+    font-size: 10px;
 }
+
 
 h2{
     color: red;
@@ -81,17 +55,72 @@ h3{
     border-bottom: black solid 2px;
 }
 
-.nuevo{
-    border-radius: 100%;
-    background-color: blue;
-    color: white;
-}
-
 img{
     display: flex;
 }
 
 .columna-izquierda a{
     margin-left: 10px;
+}
+
+.perfil {
+    width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.portada {
+    position: relative;
+    height: 200px;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portada img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.perfil-foto {
+    position: absolute;
+    bottom: -50px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    background: #bbb;
+    overflow: hidden;
+}
+
+.perfil-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenido {
+    padding: 70px 20px 20px;
+    text-align: center;
+}
+
+ul{
+    text-align: left;
+}
+
+button {
+    margin: 5px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #ff5100;
+    color: #ffffff;
 }
 

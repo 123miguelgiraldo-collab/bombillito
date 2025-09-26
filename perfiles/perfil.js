@@ -9,3 +9,26 @@ window.onload = function() {
     document.getElementById('edad-usuario').textContent = edad || 'Invitado'
     document.getElementById('institucion-usuario').textContent = institucion || 'Invitado'
 }
+
+    const perfilInput = document.getElementById("perfilInput");
+    const fondoInput = document.getElementById("fondoInput");
+    const perfilPreview = document.getElementById("perfilPreview");
+    const fondoPreview = document.getElementById("fondoPreview");
+
+    perfilInput.addEventListener("change", function() {
+        const file = this.files[0];
+        if (file) {
+        const reader = new FileReader();
+        reader.onload = e => perfilPreview.src = e.target.result;
+        reader.readAsDataURL(file);
+        }
+});
+
+    fondoInput.addEventListener("change", function() {
+        const file = this.files[0];
+        if (file) {
+        const reader = new FileReader();
+        reader.onload = e => fondoPreview.src = e.target.result;
+        reader.readAsDataURL(file);
+        }
+    });
