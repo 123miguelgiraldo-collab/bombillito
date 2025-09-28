@@ -41,7 +41,7 @@
 
         function draw() {
             // Fondo
-            ctx.fillStyle = '#111';
+            ctx.fillStyle = '#1a991aff';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
             // Centro

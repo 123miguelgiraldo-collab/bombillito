@@ -45,23 +45,26 @@ function draw() {
 
     // Suma
     ctx.font = '32px Arial';
-    ctx.fillStyle = '#222';
-    ctx.fillText(`¿Cuánto es ${currentSum.a} + ${currentSum.b}?`, 30, 50);
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.86)'
+    ctx.fillRect(0, 0, canvas.width, 110)
+    ctx.strokeStyle = 'ffffff'
+    ctx.fillStyle = '#000000ff';
+    ctx.fillText(`¿Cuánto es ${currentSum.a} + ${currentSum.b}?`, 600, 50);
 
     // Puntos y vidas
     ctx.font = '20px Arial';
-    ctx.fillStyle = '#007700';
-    ctx.fillText(`Puntos: ${score}`, 30, 90);
-    ctx.fillStyle = '#bb2222';
-    ctx.fillText(`Vidas: ${lives}`, canvas.width - 120, 90);
+    ctx.fillStyle = '#00a500ff';
+    ctx.fillText(`Puntos: ${score}`, 400, 90);
+    ctx.fillStyle = '#ff0000ff';
+    ctx.fillText(`Vidas: ${lives}`, canvas.width - 400, 90);
 
     // Burbujas
     bubbles.forEach(b => {
         ctx.beginPath();
         ctx.arc(b.x, b.y, b.r, 0, Math.PI * 2);
-        ctx.fillStyle = '#ffd900';
+        ctx.fillStyle = '#eeff00ff';
         ctx.fill();
-        ctx.strokeStyle = '#ff9100';
+        ctx.strokeStyle = '#ff5e00ff';
         ctx.lineWidth = 4;
         ctx.stroke();
         ctx.fillStyle = '#222';

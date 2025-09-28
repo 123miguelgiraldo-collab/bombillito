@@ -45,10 +45,10 @@ function render() {
         div.ondragover = e => {
             if (pausado || terminado) return;
             e.preventDefault();
-            div.style.borderColor = '#00bcd4';
+            div.style.borderColor = '#f38b02ff';
         };
         div.ondragleave = () => {
-            div.style.borderColor = t.estado === 'correcta' ? '#4caf50' : t.estado === 'incorrecta' ? '#e53935' : '#b2ebf2';
+            div.style.borderColor = t.estado === 'correcta' ? '#2abb2fff' : t.estado === 'incorrecta' ? '#e21c18ff' : '#71c4cfff';
         };
         div.ondrop = e => {
             if (pausado || terminado) return;

@@ -1,5 +1,7 @@
 body {
-    background: linear-gradient(135deg, #fceabb 60%, #f8b500 100%);
+    background-image: url(../../IMG/fondo-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 100vh;
     margin: 0;
     font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
@@ -36,6 +38,10 @@ body {
     margin-bottom: 10px;
     font-size: 1.1em;
     color: #b26a00;
+    background-color: white;
+    padding: 8px;
+    border-radius: 15px;
+    border: solid black 2px;
 }
 
 .vidas {
@@ -50,7 +56,7 @@ body {
 
 #multiCanvas {
     background: #fffbe7;
-    border: 4px solid #f8b500;
+    border: 4px solid #000000;
     border-radius: 18px;
     box-shadow: 0 8px 32px #f8b50033;
     margin-bottom: 20px;

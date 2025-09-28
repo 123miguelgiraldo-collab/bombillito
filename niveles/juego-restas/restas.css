@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
-    background: linear-gradient(135deg, #00e1ff 60%, #ff9100 100%);
+    background-image: url(../../IMG/fondo-header.jpg);
     min-height: 100vh;
     margin: 0;
     display: flex;
@@ -17,8 +17,8 @@ body {
 }
 
 .menu-restas button {
-    background: #00bcd4;
-    border: none;
+    background: #faab00;
+    border: solid black 2px;
     border-radius: 10px;
     padding: 10px 18px;
     font-size: 1em;
@@ -29,7 +29,7 @@ body {
 }
 
 .menu-restas button:hover {
-    background: #008ba3;
+    background: #fbff00;
 }
 
 .tablero {
@@ -76,16 +76,16 @@ body {
 }
 
 .respuesta {
-    background: #00bcd4;
-    color: #fff;
+    background: #ffee00de;
+    color: #000000;
     border-radius: 12px;
     padding: 18px 28px;
     font-size: 1.3em;
     font-weight: bold;
     cursor: grab;
     user-select: none;
-    box-shadow: 0 2px 8px #00bcd455;
-    border: 2px solid #fff;
+    box-shadow: 0 2px 8px #00000055;
+    border: 2px solid #ff5e00;
     transition: background 0.2s, color 0.2s;
 }
 
@@ -96,16 +96,19 @@ body {
 .info {
     margin-bottom: 10px;
     font-size: 1.1em;
-    color: #008ba3;
+    color: #000000;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
 }
 
 .vidas {
-    color: #e53935;
+    color: #ff0a06;
     font-weight: bold;
 }
 
 .puntaje {
-    color: #388e3c;
+    color: #0a9911;
     font-weight: bold;
 }
 

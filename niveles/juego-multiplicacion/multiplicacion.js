@@ -13,7 +13,7 @@ let vidas = 3;
 let pausado = false;
 let terminado = false;
 let globos = [];
-let velocidad = 1.5;
+let velocidad = 3.5;
 let frame = 0;
 
 function crearGlobo() {
@@ -62,13 +62,13 @@ function dibujarGlobos() {
         // Globo
         ctx.beginPath();
         ctx.arc(globo.x, globo.y, globo.r, 0, Math.PI * 2);
-        ctx.fillStyle = globo.esPar ? "#ffd900" : "#b2ebf2";
+        ctx.fillStyle = globo.esPar ? "#fffb15ff" : "#ffbc03ff";
         ctx.fill();
-        ctx.strokeStyle = "#ff9100";
+        ctx.strokeStyle = "#ff5e00ff";
         ctx.lineWidth = 4;
         ctx.stroke();
         // Multiplicación
-        ctx.fillStyle = "#333";
+        ctx.fillStyle = "#000000ff";
         ctx.font = "bold 22px Arial";
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
@@ -78,7 +78,7 @@ function dibujarGlobos() {
         if (globo.explota) {
             ctx.save();
             ctx.globalAlpha = globo.alpha;
-            ctx.strokeStyle = "#ff9100";
+            ctx.strokeStyle = "#ff0000ff";
             ctx.lineWidth = 2;
             for (let i = 0; i < 8; i++) {
                 let angle = (i / 8) * Math.PI * 2;

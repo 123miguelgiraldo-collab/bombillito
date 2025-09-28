@@ -21,6 +21,7 @@ html, body{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
+    height: 620px;
     background: rgba(0, 0, 0, 0.541);
     border-radius: 10px;
 }
@@ -290,7 +291,7 @@ input[type="submit"]:hover{
 
 .volver{
     margin-left: 130px;
-    padding: 10px;
+    transform: translate(2%, -190%);
 }
 a{
     color: rgb(255, 217, 0);
