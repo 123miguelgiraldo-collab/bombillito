@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Math Quest — Plataforma 2D</title>
+    <link rel="stylesheet" href="./game.css">
+</head>
+<body>
+    <div id="gameWrap">
+    <div style="position:relative;">
+        <canvas id="gameCanvas" width="900" height="500"></canvas>
+
+    <!-- Overlay para batalla -->
+    <div id="battleOverlay">
+        <div class="battleCard">
+            <div class="battleRow">
+                <div class="panel">
+                    <h3>Jugador <span id="playerHPdisplay">(100 HP)</span></h3>
+                    <div class="bar"><i id="playerBar"></i></div>
+            </div>
+            <div class="panel">
+                <h3>Enemigo <span id="enemyHPdisplay">(100 HP)</span></h3>
+            <div class="bar"><i id="enemyBar"></i></div>
+        </div>
+    </div>
+
+    <div class="battleRow">
+        <div class="panel center">
+            <div class="small">Tiempo para responder</div>
+            <div id="timer">60</div>
+            </div>
+            <div class="panel center">
+                <div class="small">Ecuación</div>
+                <div id="equation">3 + 4 × 2</div>
+            </div>
+            <div class="panel center">
+                <div class="small">Tu respuesta</div>
+                <input id="answerInput" type="text" inputmode="numeric" />
+                <div style="margin-top:8px;">
+                <button id="submitAnswer" class="btn">Enviar</button>
+                <button id="skipAnswer" class="btn secondary">Rendirse</button>
+                </div>
+            </div>
+            </div>
+
+            <div id="battleLog" class="small"></div>
+
+            <div style="display:flex; justify-content:flex-end; gap:8px; margin-top:10px;">
+            <button id="closeBattle" class="btn secondary">Cerrar (no disponible)</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="hud" aria-hidden="false">
+        <div class="stat">
+        <div style="display:flex; justify-content:space-between;"><div>Vida</div><div id="hudHP">100</div></div>
+        <div class="bar"><i id="hudBar"></i></div>
+        </div>
+        <div class="stat">
+        <div style="display:flex; justify-content:space-between;"><div>Enemigos derrotados</div><div id="hudKills">0</div></div>
+        </div>
+        <div class="stat small">
+            Controles: A / D ← → = mover · W / ↑ / Espacio = saltar · S / ↓ = agacharse · Toca un cuaderno para pelear
+        </div>
+    </div>
+    <a href="/niveles/niveles.html"><button>volver</button></a>
+
+    <footer class="small">Math Quest — archivos separados. Reemplaza los SVGs por PNGs en <code>game.js</code> si prefieres.</footer>
+    </div>
+
+<script src="./game.js"></script>
+</body>
+</html>

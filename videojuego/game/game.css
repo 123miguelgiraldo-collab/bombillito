@@ -1,0 +1,152 @@
+:root{
+    --canvas-bg:#87ceeb;
+    --ground:#5e391e00;
+    --hud-bg: rgba(0,0,0,0.6);
+    --bar-player: #4caf50;
+    --bar-enemy: #f44336;
+    font-family: Inter, system-ui, sans-serif;
+}
+html,body{
+    height:100%; 
+    margin:0; background:#111; 
+    display:flex; 
+    align-items:center; 
+    justify-content:center;
+}
+
+#gameWrap{ 
+    width: 900px; 
+    max-width:95vw; 
+    background:#000000; 
+    padding:12px; 
+    border-radius:8px; 
+    box-shadow:0 6px 30px rgba(0,0,0,0.6);
+}
+
+canvas{ 
+    display:block; 
+    background:var(--canvas-bg); 
+    width:100%; 
+    border-radius:6px; 
+}
+
+.hud{ 
+    margin-top:8px; 
+    display:flex; 
+    gap:8px; 
+    align-items:center; 
+    color:#fff; 
+}
+
+.stat{ 
+    background:var(--hud-bg); 
+    padding:8px 12px; 
+    border-radius:6px; 
+    flex:1; 
+}
+
+.bar{ 
+    height:12px; 
+    background:#2f8d04; 
+    border-radius:999px; 
+    overflow:hidden; 
+    margin-top:6px; 
+}
+
+.bar>i{ 
+    display:block; 
+    height:100%; 
+    width:100%; 
+}
+
+#battleOverlay{ 
+    position:absolute; 
+    inset:0; 
+    display:flex; 
+    align-items:center; 
+    justify-content:center; 
+    background: rgba(248, 179, 28, 0.6); 
+    z-index:50; 
+    visibility:hidden; 
+}
+
+.battleCard{ 
+    width:640px; 
+    max-width:95vw; 
+    background:#ff8800a2; 
+    padding:18px; 
+    border-radius:10px; 
+    box-shadow:0 8px 30px rgba(34, 5, 5, 0.5); 
+}
+
+.battleRow{ 
+    display:flex; 
+    justify-content:space-between; 
+    align-items:center; 
+    gap:12px; 
+    margin-bottom:10px; 
+}
+
+.battleRow .panel{ 
+    background:#ffffffda; 
+    padding:12px; 
+    border-radius:8px; 
+    flex:1; 
+    text-align:center; 
+}
+
+.battleRow .panel h3{ 
+    margin:0 0 8px 0; 
+}
+
+#equation{ 
+    font-weight:700; 
+    font-size:20px; 
+}
+
+#answerInput{ 
+    width:120px; 
+    padding:8px; 
+    font-size:16px; 
+}
+
+#battleLog{ 
+    max-height:120px; 
+    overflow:auto; 
+    background:#000000; 
+    color:#fff; 
+    padding:8px; 
+    border-radius:6px; 
+    font-size:14px; 
+    margin-top:8px; 
+}
+
+.btn{ 
+    padding:10px 14px; 
+    border-radius:8px; 
+    cursor:pointer; 
+    border:0; 
+    background:#f7fc01; 
+    color:#fff; 
+    font-weight:600; 
+}
+
+.btn.secondary{ 
+    background:#ff5100; 
+}
+
+.center{ 
+    text-align:center; 
+}
+
+.small{ 
+    font-size:13px; 
+    color:#000000; 
+}
+
+footer.small{ 
+    margin-top:8px; 
+    color:#bbb; 
+    font-size:12px; 
+    text-align:right; 
+}
