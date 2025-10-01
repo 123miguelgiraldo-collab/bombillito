@@ -28,18 +28,27 @@ a{
     align-items: flex-start;
     gap: 30px;
     margin: 30px;
-    padding: 10px;
+    padding: 7px;
     box-shadow: 0 2px 8px rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.774);
     border-radius: 15px;
     width: 100%;
 }
 
-.columna-izquierda, .columna-derecha {
+.columna-derecha {
+    background-color: white;
     flex: 1;
     min-width: 200px;
-    background: #ffffff;
-    padding: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgb(0, 0, 0);
+}
+
+.columna-izquierda{
+    flex: 1;
+    min-width: 200px;
+    background-color: #ffffff;
+    padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgb(0, 0, 0);
 }
@@ -126,6 +135,7 @@ img{
 .contenido {
     padding: 70px 20px 20px;
     text-align: center;
+    background-color: white;
 }
 
 ul{
@@ -143,3 +153,36 @@ button {
     font-size: 25px;
 }
 
+
+html[data-theme="dark"] .contenedor-principal {
+    background: #000000a2 ;
+}
+
+html[data-theme="dark"] .columna-derecha{
+    background: #131212 ;
+    color: rgb(99, 99, 99);
+}
+
+html[data-theme="dark"] .columna-izquierda{
+    background: #131212 ;
+    color: rgb(99, 99, 99);
+}
+
+html[data-theme="dark"] .columna-central{
+    background: #000000 ;
+}
+
+html[data-theme="dark"] .contenido{
+    background: #131212 ;
+    color: rgb(99, 99, 99);
+}
+
+html[data-theme="dark"].perfil{
+    background: #131212 ;
+    color: rgb(99, 99, 99);
+}
+
+html[data-theme="dark"] .contenido button{
+    background: #2c2c2c;
+    color: rgb(143, 142, 142);
+}

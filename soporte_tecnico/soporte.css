@@ -72,3 +72,26 @@ button{
     display: flex;
     margin: auto;
 }
+
+html[data-theme="dark"]  header{
+    background: #2c2c2c !important;
+    color: rgb(143, 142, 142);
+}
+
+html[data-theme="dark"] main{
+    background: #2c2c2c !important;
+}
+
+html[data-theme="dark"] body{
+    background: #000000 !important;
+    color: rgb(146, 139, 139);
+}
+
+html[data-theme="dark"] .contacto{
+    background: #1a1919 !important;
+    color: rgb(143, 142, 142);
+}
+
+html[data-theme="dark"] h3{
+    color: rgb(201, 200, 200);
+}

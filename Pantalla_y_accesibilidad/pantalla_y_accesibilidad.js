@@ -54,8 +54,8 @@ window.addEventListener('DOMContentLoaded', () => {
     if (savedContrast === 'on') {
         root.classList.add('high-contrast');
         if (preview) {
-            preview.style.background = '#000';
-            preview.style.color = '#fff';
+            preview.style.background = '#000000';
+            preview.style.color = '#ffffff';
         }
         if (highContrast) {
             highContrast.setAttribute('aria-checked', 'true');
@@ -145,4 +145,3 @@ if (highContrast) {
     });
 }
 
-document.documentElement.getAttribute("data-theme")

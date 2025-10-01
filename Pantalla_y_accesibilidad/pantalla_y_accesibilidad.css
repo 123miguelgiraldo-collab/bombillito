@@ -2,7 +2,7 @@
         --bg: #f6f7fb;
         --card: #fff;
         --text: #0b1220;
-        --muted: #5b6470;
+        --muted: #5e5e5e;
         --accent: #0066cc;
         --focus: 3px solid rgba(0, 102, 204, 0.25);
     }
@@ -11,7 +11,7 @@
         --bg: #0b0f13;
         --card: #0f1418;
         --text: #e8eef6;
-        --muted: #9aa4b3;
+        --muted: #797979;
         --accent: #66a8ff;
     }
 

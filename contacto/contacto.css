@@ -16,7 +16,8 @@ main {
     border-radius: 8px;
 }
 
-header, footer {
+header,
+footer {
     text-align: center;
     padding: 1rem 0;
     background-color: #333;
@@ -27,7 +28,8 @@ section {
     margin-bottom: 2rem;
 }
 
-h1, h2 {
+h1,
+h2 {
     color: #ff9900;
     border-bottom: 2px solid #ff6803;
     padding-bottom: 0.5rem;
@@ -48,6 +50,7 @@ h1, h2 {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    background-color: #faf4f4;
 }
 
 .formulario-contacto form button {
@@ -79,7 +82,7 @@ h1, h2 {
     height: 40px;
 }
 
-button{
+button {
     display: flex;
     margin: auto;
     background-color: #ffa600;
@@ -90,7 +93,28 @@ button{
     border: none;
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
+}
+
+
+html[data-theme="dark"] body {
+    background: #000000 !important;
+    color: #f1f1f1 !important;
+}
+
+
+html[data-theme="dark"] h1 {
+    color: rgb(194, 191, 191);
+}
+
+html[data-theme="dark"] main {
+    background-color: #121212;
+    color: rgb(122, 122, 122);
+}
+
+html[data-theme="dark"] input, textarea {
+    background-color: #333;
+    color: #ccc;
 }

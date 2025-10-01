@@ -1,6 +1,8 @@
 body {
   margin: 0;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  background: var(--bg);
+  color: var(--text);
 }
 
 
@@ -30,7 +32,7 @@ header {
   background-color: #ffee0063;
 }
 .section h2 {
-  color: #ff6600;
+  color: #ff9900;
 }
 .card {
   background-color: #fff;
@@ -153,37 +155,67 @@ nav ul{
   max-height: 1000px;
 }
 
-body {
-    background: #ffffff;
-    color: #000000;
-}
+
+
+
 
 html[data-theme="dark"] body {
     background: #121212 !important;
     color: #f1f1f1 !important;
 }
 
-html[data-theme="contrast"] body {
-    background: #000000 !important;
-    color: #ffffff !important;
-}
-
 p, li {
-  color: #333333; /* un gris oscuro legible */
+  color: #6b6a6a; /* un gris oscuro legible */
 }
 
-html[data-theme="dark"] p,
-html[data-theme="dark"] li,
-html[data-theme="dark"] span {
-  color: #383838;
+.hero p {
+  color: #ffffff; 
 }
 
-html[data-contrast="high"] body {
-  background: #000 !important;
-  color: #fff !important;
+footer p {
+  color: #ffffff; 
 }
 
-html[data-contrast="high"] p,
-html[data-contrast="high"] li {
-  color: #fff !important;
+html[data-theme="dark"] .card{
+  background-color: #0f1418;
 }
+
+html[data-theme="dark"] footer p,
+html[data-theme="dark"] .hero p,
+html[data-theme="dark"] h1{
+  color: rgb(83, 83, 83);
+}
+
+html[data-theme="dark"] footer {
+  background-color: #0f1418;
+}
+
+html[data-theme="dark"] h2
+html[data-theme="dark"] .section{
+  color: #fff;
+  
+}
+
+html[data-theme="dark"] .barra{ 
+  color: rgb(44, 44, 44);
+  background-color: #0f1418;
+}
+
+html[data-theme="dark"] .barra a{
+  color: #474747;
+}
+
+html[data-theme="dark"] .section{
+  background-color: #442a0b;
+  
+}
+
+html[data-theme="dark"] .dropdown-menu {
+  background-color: #0f1418;
+  color: #6b6a6a;
+}
+
+html[data-theme="dark"] .dropdown-menu a{
+  color: #6b6a6a;
+}
+
