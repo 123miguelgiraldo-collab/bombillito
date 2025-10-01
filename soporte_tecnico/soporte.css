@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background: #ffd900;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #ffc400;
+    margin-top: 20px;
+}
+
+.faq {
+    margin-bottom: 20px;
+}
+
+.faq p {
+    margin: 5px 0 15px 0;
+}
+
+.contacto {
+    background: #eef5ff;
+    padding: 15px;
+    border-left: 4px solid #f18900;
+    border-radius: 4px;
+    margin-top: 30px;
+}
+
+a{
+    color: #ffd000;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #333;
+    color: white;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #fffb00;
+    text-decoration: none;
+}
+
+button{
+    background-color: #ff7300;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    margin: auto;
+}
