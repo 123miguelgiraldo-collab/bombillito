@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pantalla y accesibilidad — Demo</title>
+    <link rel="shortcut icon" href="../IMG/bombilla-encendida.png" type="image/x-icon">
+    <link rel="stylesheet" href="pantalla_y_accesibilidad.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div aria-hidden="true"
+                style="width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),transparent)">
+            </div>
+            <div>
+                <h1>Pantalla y accesibilidad</h1>
+                <p>Ajusta la apariencia y accesibilidad de esta página.</p>
+            </div>
+        </header>
+
+        <div class="grid">
+            <aside class="sidebar" aria-label="Navegación de ajustes">
+                <nav>
+                    <div class="item" aria-current="true">Pantalla</div>
+                    <div class="item">Texto y tipografía</div>
+                    <div class="item">Accesibilidad</div>
+                    <a href="../paginainiciada.html"><button>Volver</button></a>
+                </nav>
+            </aside>
+
+            <main class="panel" role="main">
+                <section class="section">
+                    <h2>Pantalla</h2>
+                    <div class="row">
+                        <div>
+                            <div style="font-weight:600">Brillo</div>
+                            <div class="help">Ajusta la iluminación de la página.</div>
+                        </div>
+                        <div class="control">
+                            <input id="brightness" type="range" min="50" max="150" value="100">
+                            <span id="brightnessVal" class="help">100%</span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div>
+                            <div style="font-weight:600">Tema oscuro</div>
+                            <div class="help">Activa el modo oscuro.</div>
+                        </div>
+                        <div class="control">
+                            <div id="themeToggle" class="toggle" role="switch" aria-checked="false" tabindex="0">
+                                <span class="knob"></span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>Texto y tipografía</h2>
+                    <div class="row">
+                        <div>
+                            <div style="font-weight:600">Tamaño de texto</div>
+                            <div class="help">Cambia el tamaño de las letras.</div>
+                        </div>
+                        <div class="control">
+                            <input id="textSize" type="range" min="12" max="30" value="16">
+                            <span id="textSizeVal" class="help">16px</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <div style="font-weight:600">Interlineado</div>
+                            <div class="help">Aumenta o reduce el espacio entre líneas.</div>
+                        </div>
+                        <div class="control">
+                            <select id="lineHeight">
+                                <option value="1.2">Estrecho</option>
+                                <option value="1.5" selected>Normal</option>
+                                <option value="1.8">Amplio</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>Accesibilidad</h2>
+                    <div class="row">
+                        <div>
+                            <div style="font-weight:600">Alto contraste</div>
+                            <div class="help">Texto blanco sobre negro.</div>
+                        </div>
+                        <div class="control">
+                            <div id="highContrast" class="toggle" role="switch" aria-checked="false" tabindex="0">
+                                <span class="knob"></span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>Vista previa</h2>
+                    <div class="preview" id="preview">
+                        <p><strong>Texto de ejemplo:</strong> Aquí puedes probar los ajustes de accesibilidad.</p>
+                        <p>Modifica los controles para ver cambios en tiempo real.</p>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+
+    <script src="pantalla_y_accesibilidad.js" defer></script>
+</body>
+
+</html>

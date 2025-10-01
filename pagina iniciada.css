@@ -1,9 +1,9 @@
 body {
   margin: 0;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  background-color: #f0f8ff;
-  color: #333;
 }
+
+
 header {
   background-size: cover;
   color: white;
@@ -33,7 +33,7 @@ header {
   color: #ff6600;
 }
 .card {
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 10px;
   padding: 20px;
   margin: 10px 0;
@@ -121,7 +121,6 @@ nav ul{
   margin: 15px 0;
   border: 0;
   height: 1px;
-  background-color: #ccc;
 }
 
 .menu-options{
@@ -148,13 +147,43 @@ nav ul{
 
 .menu-options span {
   font-size: 20px;
-  color: #aaa;
 }
 
 .open-menu {
-  max-height: 400px;
+  max-height: 1000px;
 }
 
-.Codigo{
-  margin-top: 25px;
+body {
+    background: #ffffff;
+    color: #000000;
+}
+
+html[data-theme="dark"] body {
+    background: #121212 !important;
+    color: #f1f1f1 !important;
+}
+
+html[data-theme="contrast"] body {
+    background: #000000 !important;
+    color: #ffffff !important;
+}
+
+p, li {
+  color: #333333; /* un gris oscuro legible */
+}
+
+html[data-theme="dark"] p,
+html[data-theme="dark"] li,
+html[data-theme="dark"] span {
+  color: #383838;
+}
+
+html[data-contrast="high"] body {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+html[data-contrast="high"] p,
+html[data-contrast="high"] li {
+  color: #fff !important;
 }
